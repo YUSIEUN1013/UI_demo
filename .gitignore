@@ -30,4 +30,3 @@ build/
 .vscode/
 
 # Project exclude paths
-/target/

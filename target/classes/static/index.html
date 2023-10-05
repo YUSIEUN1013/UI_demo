@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+kong api gateway 실습 화면 <br>
+<button onclick="doAction()"> api 호출 </button>
+<div class="apilist">
+
+</div>
+
+<script>
+    function doAction(){
+
+        const url = 'http://101.55.69.114:31220/first';
+
+        fetch(url, {
+            method: 'GET',
+        })
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data.test);
+                document.querySelector(".apilist").innerHTML = '<span>' + data.test + '</span>'
+            });
+
+    }
+
+</script>
+
+</body>
+</html>
