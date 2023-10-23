@@ -1,0 +1,97 @@
+#main-title{
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    margin-left: 10px;
+}
+
+#main-table{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 90%;
+}
+
+.inputtext {
+    width: 200px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+
+.actionbtn {
+    width: 120px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+    background: #646464;
+}
+
+
+.insertform{
+    border: #42444e solid 3px;
+    padding: 10px;
+    width: 500px;
+    font-family: 'Sunflower', sans-serif;
+    margin: 10px;
+}
+
+#insertspan{
+    font-size: 20px;
+}
+
+#insertinput{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.select{
+    margin-bottom: 20px;
+}
+
+.select:hover {
+    background: #42444e;
+}
+
+.input:hover {
+    background: #42444e;
+}
+th,
+td {
+    padding: 6px 15px;
+    text-align: center;
+}
+
+th {
+    background: #42444e;
+    color: #fff;
+}
+tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+td {
+    border-right: 1px solid #c6c9cc;
+    border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+    border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+    background: #eaeaed;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}

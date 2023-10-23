@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kong API Gateway 실습</title>
+    <link rel="stylesheet" type="text/css" href="style.css?after" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-kong api gateway 실습 화면 <br>
-<button onclick="doAction()"> api 호출 </button>
-<div class="apilist">
+<span id="main-title">Dessert Order</span><br>
+<div class="insertform">
+        <span id="insertspan"> 주문 추가하기 </span> <br>
+        <div id="insertinput">
+            <input class="inputtext" type="text" id="username" name="username" placeholder="주문자 이름을 입력하세요.">
 
+            <input class="inputtext" type="text" id="ordermenu" name="ordermenu" placeholder="주문 메뉴를 입력하세요.">
+        </div>
+        <button class="actionbtn input" id="insertbutton" >추가하기</button> <br>
 </div>
+<div class="insertform">
+<button id="updatebutton" class="button-style select actionbtn"> <span>주문내역 가져오기</span> </button>
+<table id="main-table">
+    <thead>
+    <tr>
+        <th>이름</th>
+        <th>메뉴</th>
+        <th>삭제</th>
+    </tr>
+    </thead>
+    <tbody id="table-body">
 
-<script>
-    function doAction(){
-
-        const url = 'http://dev3.acloud.run/apitest/first';
-
-        fetch(url, {
-            method: 'GET',
-        })
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                console.log(data.test);
-                document.querySelector(".apilist").innerHTML = '<span>' + data.test + '</span>'
-            });
-
-    }
-
-</script>
-
+    </tbody>
+</table>
+</div>
+<script src="test.js"></script>
 </body>
 </html>
